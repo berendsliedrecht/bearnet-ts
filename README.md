@@ -33,3 +33,25 @@ const msg = b.decode(token, { returnAsString: true })
 
 assert(msg === 'hello')
 ```
+
+### Separated encoding and decoding
+
+```typescript
+import { Bearnet } from 'bearnet'
+
+const b = new Bearnet(new Uint8Array(32).fill(0))
+
+const token = b.encode('hello')
+```
+
+> Key and Token transfer happen OOB
+
+```typescript
+import { Bearnet } from 'bearnet'
+
+const b = new Bearnet(new Uint8Array(32).fill(0))
+
+const msg = b.decode(token, { returnAsString: true })
+
+assert(msg === 'hello')
+```
