@@ -1,0 +1,53 @@
+{
+    "name": "bearnet",
+    "version": "0.0.0",
+    "description": "Fernet using XChaCha20Poly1305 and base64-url-no-pad",
+    "license": "(MIT OR Apache-2.0)",
+    "author": "Berend Sliedrecht <sliedrecht@berend.io>",
+    "readme": "README.md",
+    "keywords": [
+        "fernet",
+        "bearnet",
+        "crypto",
+        "chacha20",
+        "poly1305",
+        "XChaCha20Poly1305"
+    ],
+    "repository": {
+        "url": "https://github.com/berendsliedrecht/bearnet-ts",
+        "type": "git"
+    },
+    "homepage": "https://github.com/berendsliedrecht/bearnet-ts",
+    "bugs": {
+        "url": "https://github.com/berendsliedrecht/bearnet-ts/issues",
+        "email": "sliedrecht@berend.io"
+    },
+    "main": "build/index.js",
+    "files": [
+        "build",
+        "LICENSE-MIT",
+        "LICENSE-APACHE-2.0"
+    ],
+    "scripts": {
+        "clean": "rm -rf build",
+        "clean:deps": "pnpm clean && rm -rf node_modules",
+        "build": "tsc",
+        "test": "node --require ts-node/register --test ./tests/*.test.ts",
+        "prettier": "prettier --ignore-path .gitignore .",
+        "check-format": "pnpm prettier --list-different",
+        "check-types": "pnpm build --noEmit",
+        "format": "pnpm prettier --write",
+        "release": "release-it"
+    },
+    "dependencies": {
+        "@noble/ciphers": "^0.4.0",
+        "buffer": "^6.0.3"
+    },
+    "devDependencies": {
+        "@types/node": "^20.8.4",
+        "prettier": "^3.0.3",
+        "release-it": "16.2.1",
+        "ts-node": "^10.9.1",
+        "typescript": "~5.2.2"
+    }
+}
