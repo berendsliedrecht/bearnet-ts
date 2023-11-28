@@ -1,6 +1,8 @@
 # Bearnet
 
-Implementation of fernet, but using XChaCha20Poly1305 (following [unofficial version 3](https://github.com/mikelodder7/fernet/blob/deccfda5ff8d3c407175a2eace570bd4b7adc5ad/specs/version3.md)).
+> Name is partially inspired by [hairnet](https://github.com/ferd/hairnet)
+
+Implementation of [fernet](https://github.com/fernet/spec/blob/20dead475f53f11d20592baf29ad697163afc0cd/Spec.md), but using XChaCha20Poly1305 (following [unofficial version 3](https://github.com/mikelodder7/fernet/blob/deccfda5ff8d3c407175a2eace570bd4b7adc5ad/specs/version3.md)).
 
 ### Cryptography
 
