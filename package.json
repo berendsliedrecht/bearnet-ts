@@ -1,6 +1,6 @@
 {
     "name": "bearnet",
-    "version": "0.0.0",
+    "version": "0.1.0",
     "description": "Fernet using XChaCha20Poly1305 and base64-url-no-pad",
     "license": "(MIT OR Apache-2.0)",
     "author": "Berend Sliedrecht <sliedrecht@berend.io>",
